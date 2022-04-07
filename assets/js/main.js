@@ -4,12 +4,12 @@ document.getElementById("calculate").addEventListener("click", function(){
     const food = floatConvertion("food");
     const rent = floatConvertion("rent");
     const clothes = floatConvertion("clothes");
-    if((income>0 && food>0)&&(rent>0 && clothes>0)){
+    if((income>0 && food>0) && (rent>0 && clothes>0)){
         display("positive-input-warning", false);
         const totalExpense = food+rent+clothes;
         if(totalExpense>income){
             display("over-expense", true);
-        }else{
+        } else {
             display("over-expense", false);
             getInnerText("total-expence", totalExpense);
             document.getElementById("balance").innerText= income-totalExpense;
@@ -29,7 +29,7 @@ document.getElementById("save-btn").addEventListener("click", function(){
         getInnerText("saving-amount", savings);
 
         const prevBalance = parseFloat(document.getElementById("balance").innerText);
-        if(savings>prevBalance){
+        if(savings > prevBalance){
             display("fund-warning", true);
         } else {
             display("fund-warning", false);
