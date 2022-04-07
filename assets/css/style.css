@@ -67,4 +67,7 @@ main{
     .button{
         padding: 10px 30px;
     }
+    .half-width{
+        width: 100%;
+    }
 }
