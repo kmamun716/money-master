@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takar Hisab</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: blueviolet;">Takar Hisab</h1> <img src="assets/images/money.png" alt="">
+    </header>
+    <!-- main area start -->
+    <main>
+        <div class="left-side half-width">
+            <img src="assets/images/image.jpg" alt="">
+        </div>
+        <div class="right-side half-width">
+            <div class="income">
+                <h3 style="text-align: center;">Income</h3>
+                <span>Income</span> <input type="text" id="income" placeholder="Your Total Income">
+            </div>
+            <div class="expense">
+                <h3 style="text-align: center;">expense</h3>
+                <span>Food: </span> <input type="text" id="food" placeholder="Expense for Food"><br><br>
+                <span>Rent: </span> <input type="text" id="rent" placeholder="Expense for Rent"><br><br>
+                <span>Clothes: </span> <input type="text" id="clothes" placeholder="Expense for Clothes">
+                <p class="warning" id="over-expense">expense amount can't over from income amount</p>
+            </div><br>
+            <p class="warning" id="positive-input-warning">Please input some positive value</p>
+            <button class="button" id="calculate">Calculate</button>
+            <h2>Total Expense: <span id="total-expence">0</span></h2>
+            <h2>Balance: <span id="balance">0</span></h2>
+
+            <!-- savings zone -->
+            <div class="save">
+                <span>Save: </span> <input type="text" id="save-input"> % <button class="button" id="save-btn">Save</button>
+                <p class="warning" id="fund-warning">**Insufficient funds!!</p>
+                <p class="warning" id="positive-savings-warning">Please input some positive value</p>
+            </div>
+            <h2>Saving Amount: <span id="saving-amount">0</span></h2>
+            <h2>Remaining Balance: <span id="remaining-balance">0</span></h2>
+        </div>
+    </main>
+
+    <!-- javascript link -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
