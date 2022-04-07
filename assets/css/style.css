@@ -51,7 +51,9 @@ main{
     font-weight: bold;
     color: red;
 }
-
+input{
+    border-radius: 5px;
+}
 
 /* responsive zone */
 
@@ -69,5 +71,8 @@ main{
     }
     .half-width{
         width: 100%;
+    }
+    #save-input{
+        width: 30%;
     }
 }
